@@ -74,7 +74,7 @@ namespace BBQMaker
         private void Beeep()
         {
             WriteLine("\nBeeeep!!!");
-            Beep(300, 1500);
+            Beep(350, 1500);
         }
 
         private void TurnOn()
