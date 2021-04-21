@@ -71,6 +71,27 @@ namespace BBQMaker
                 WriteLine("Error: First need to load Meat");
         }
 
+        public void CookVeal()
+        {
+            if (IsMeatLoaded())
+            {
+                TurnOn();
+                WriteLine("Grill set 50 temperature and 10 minutes");
+                Thread.Sleep(2000);
+                WriteLine("*Pshhhhhisssshhhhh*");
+                for (var i = 0; i < 10; i++)
+                {
+                    Write(". ");
+                    Thread.Sleep(200);
+                }
+                Thread.Sleep(500);
+                Beeep();
+                TurnOff();
+            }
+            else
+                WriteLine("Error: First need to load Meat");
+        }
+
         private void Beeep()
         {
             WriteLine("\nBeeeep!!!");
