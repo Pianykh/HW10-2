@@ -12,7 +12,7 @@ namespace BBQMaker
             while (true)
             {
                 WriteLine("Choose action:\n1. Load Meat in Grill\n2. Press \"Pork\"\n" +
-                          $"3. Press \"Chicken\"\n4. Press \"Beef\" {(barbecue.LoadedMeat != null ? "\n5. Get the meat out" : "")}");
+                          $"3. Press \"Chicken\"\n4. Press \"Beef\" \n5. Press \"Veal\"{(barbecue.LoadedMeat != null ? "\n5. Get the meat out" : "")}");
 
                 switch (ReadLine())
                 {
@@ -34,7 +34,10 @@ namespace BBQMaker
                     case "4":
                         barbecue.CookBeef();
                         break;
-                    case "5" when (barbecue.LoadedMeat != null):
+                    case "5":
+                        barbecue.CookVeal();
+                        break;
+                    case "6" when (barbecue.LoadedMeat != null):
                         barbecue.LoadedMeat = null;
                         WriteLine("The meat is pulled out");
                         break;
