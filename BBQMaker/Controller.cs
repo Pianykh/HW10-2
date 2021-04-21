@@ -63,8 +63,11 @@ namespace BBQMaker
                     case "3":
                         chosenMeat = new Beef();
                         break;
+                    case "4":
+                        chosenMeat = new Veal();
+                        break;
                     default:
-                        WriteLine("Use 1, 2, 3, to choose meat. Try again.");
+                        WriteLine("Use 1, 2, 3, 4 to choose meat. Try again.");
                         break;
                 }
             }
