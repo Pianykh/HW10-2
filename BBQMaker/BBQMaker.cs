@@ -13,7 +13,7 @@ namespace BBQMaker
             if (IsMeatLoaded())
             {
                 TurnOn();
-                WriteLine("Grill set 50 temperature and 1 hour");
+                WriteLine("The Grill is set at 50 degrees for an hour");
                 Thread.Sleep(2000);
                 WriteLine("*Pshhhhhisssshhhhh*");
                 for (var i = 0; i < 10; i++)
@@ -34,7 +34,7 @@ namespace BBQMaker
             if (IsMeatLoaded())
             {
                 TurnOn();
-                WriteLine("Grill set 40 temperature and 20 minutes");
+                WriteLine("The Grill is set at 40 degrees for 20 minutes");
                 Thread.Sleep(2000);
                 WriteLine("*Pshhhhhisssshhhhh*");
                 for (var i = 0; i < 10; i++)
@@ -55,7 +55,7 @@ namespace BBQMaker
             if (IsMeatLoaded())
             {
                 TurnOn();
-                WriteLine("Grill set 60 temperature and 30 minutes");
+                WriteLine("The Grill is set at 60 degrees for 30 minutes");
                 Thread.Sleep(2000);
                 WriteLine("*Pshhhhhisssshhhhh*");
                 for (var i = 0; i < 10; i++)
